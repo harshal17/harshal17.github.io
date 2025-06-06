@@ -20,10 +20,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://downloads.channelmaster.com/waterwild-background-small.jpg');
+            background-image: url('https://images2.imgbox.com/f4/cf/N9Fl6ZMR_o.jpg');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            background-repeat: yes;
         }
 
         header {
@@ -42,17 +42,17 @@
         }
 
        main {
-    position: relative;
-    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: flex-start; /* align to top */
+    min-height: 100vh;       /* full screen height */
+    padding-top: 40px;       /* space from the very top */
 }
 
-   #profile-container {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 320px; /* Moderate width, good for 620x402 image */
-    height: auto;
-    z-index: 2;
+  #profile-container {
+    width: 100%;
+    max-width: 620px;
+    text-align: center;
 }
 		
 		.profile-link {
@@ -65,23 +65,30 @@
         
         }
 		
-  #profile-image {
+#profile-image {
     width: 100%;
     height: auto;
     display: block;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    border-radius: 10px; /* Optional: soften corners */
+    margin: 0 auto;
 }
         ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin-top: 30px; /* Add space between image and buttons */
+			margin-left: auto;
+			margin-right: auto;
             text-align: center; /* Center the buttons */
-            width: 30%; /* Adjust the width of the button container */
+            width: 100%;
+			max-width: 400px;
+			margin: 0 auto;
+    
         }
 
         li {
             margin-bottom: 10px; /* Reduce the margin between button items */
+			display: flex;
+			justify-content: center;
+   
         }
 		
 
@@ -98,6 +105,9 @@
         }
 
         a {
+			width: 450px;
+			margin: 0 auto; /* This centers it */
+			box-sizing: border-box; /* So padding doesn't overflow width */
             text-decoration: none;
             color: #000;
             font-weight: bold;
@@ -163,8 +173,22 @@
     <main>
         <div id="profile-container">
             <img id="profile-image" src="https://downloads.channelmaster.com/waterwild-small-removebg.png" alt="WaterWild Image"></a>
-        </div>
-       
+        
+       <ul>
+            <li><a href="https://www.youtube.com/@waterwild" target="_blank">
+                <img src="https://downloads.channelmaster.com/email/Icons/youtube2-dreamstale87.png" alt="Logo" class="social-logo">
+                <span class="button-text">YouTube</span></a></li>
+			<li><a href="https://www.facebook.com/thewaterwild" target="_blank">
+                <img src="https://downloads.channelmaster.com/email/Icons/facebook-dreamstale25.png" alt="Logo" class="social-logo">
+                <span class="button-text">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/the_water_wild" target="_blank">
+                <img src="https://downloads.channelmaster.com/email/Icons/instagram-dreamstale43.png" alt="Logo" class="social-logo">
+                <span class="button-text">Instagram</span></a></li>
+			<li><a href="https://www.tiktok.com/@the_water_wild" target="_blank">
+                <img src="https://images2.imgbox.com/fe/ab/Z7nLuk7Q_o.png" alt="Logo" class="social-logo">
+                <span class="button-text">TikTok</span></a></li>
+		</ul>
+		</div>
     </main>
 	 
 </body>
